@@ -17,10 +17,10 @@ import merge_sort_cuda
 
 arr = np.random.randint(0, 1000000, 50_000_000, dtype=np.int32)
 
-# Custom merge sort (5-7x faster than NumPy)
+# Custom merge sort (6-10x faster than NumPy)
 merge_sort_cuda.merge_sort_int32(arr)
 
-# Nvidia Thrust sort (20-30x faster than NumPy)
+# Nvidia Thrust sort (6-30x faster than NumPy)
 merge_sort_cuda.thrust_sort_int32(arr)
 ```
 
