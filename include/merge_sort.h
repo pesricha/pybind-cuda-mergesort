@@ -1,4 +1,5 @@
 #pragma once
 #include <cuda_runtime.h>
 
-void mergeSortCUDA(int *arr, unsigned long long n);
+template <typename T>
+void mergeSortCUDA(T *arr, unsigned long long n);
