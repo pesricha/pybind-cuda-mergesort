@@ -24,7 +24,19 @@ merge_sort_cuda.merge_sort_int32(arr)
 merge_sort_cuda.thrust_sort_int32(arr)
 ```
 
-Available functions: `{merge_sort,thrust_sort}_{int32,int64,float32,float64}`
+## Available Sorting Functions
+
+```python
+merge_sort_int32(data: np.ndarray) -> None
+merge_sort_int64(data: np.ndarray) -> None
+merge_sort_float32(data: np.ndarray) -> None
+merge_sort_float64(data: np.ndarray) -> None
+
+thrust_sort_int32(data: np.ndarray) -> None
+thrust_sort_int64(data: np.ndarray) -> None
+thrust_sort_float32(data: np.ndarray) -> None
+thrust_sort_float64(data: np.ndarray) -> None
+```
 
 # Benchmark Results RTX 4060
 
